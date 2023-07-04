@@ -15,8 +15,6 @@ public class Level2 {
         IronWall ironWall1 = new IronWall(325, 300);
         IronWall ironWall2 = new IronWall(225, 300);
         IronWall ironWall3 = new IronWall(375, 300);
-        IronWall ironWall4 = new IronWall(299, 250);
-        IronWall ironWall5 = new IronWall(299, 350);
         RowWall rowWall = new RowWall(275, 580);
         RowWall rowWall1 = new RowWall(325, 580);
         RegularWall regularWall = new RegularWall(150, 250);
@@ -56,8 +54,6 @@ public class Level2 {
         Main.gameObjects.add(ironWall1);
         Main.gameObjects.add(ironWall2);
         Main.gameObjects.add(ironWall3);
-        Main.gameObjects.add(ironWall4);
-        Main.gameObjects.add(ironWall5);
         Main.gameObjects.add(ironWall);
         ArmoredTank armoredTank = new ArmoredTank(0, 0);
         ArmoredTank armoredTank1 = new ArmoredTank(600, 0);
