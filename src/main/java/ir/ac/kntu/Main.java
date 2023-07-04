@@ -50,7 +50,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         window = primaryStage;
         gameObjects.add(playerTank);
-        window.setTitle("creating buttons");
+        window.setTitle("Start");
         window.setOnCloseRequest(e -> {
             e.consume();
             closeProgram();

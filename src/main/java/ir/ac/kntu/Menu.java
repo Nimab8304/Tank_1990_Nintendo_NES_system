@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 
 public class Menu {
     public static void showMenu(VBox layout,Stage stage){
+        stage.setTitle("Level");
         stage.setX(415);
         stage.setY(48);
         var backgroundImage = new Image("file:level.jpg");
