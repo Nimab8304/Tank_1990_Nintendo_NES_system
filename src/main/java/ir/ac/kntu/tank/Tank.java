@@ -57,21 +57,41 @@ public class Tank extends GameObject implements Serializable {
     }
 
     public void update(Tank playerTank) {
-        if (playerTank.getDirection() == 2 && playerTank.getSpeed() != 0) {
-            if (Collision.checkCollision(playerTank)) {
-                playerTank.setY(playerTank.getY() + playerTank.getSpeed());
+        if (playerTank instanceof PlayerTank) {
+            if (playerTank.getDirection() == 2 && playerTank.getSpeed() != 0) {
+                if (Collision.checkCollision(playerTank)) {
+                    playerTank.setY(playerTank.getY() + playerTank.getSpeed());
+                }
+            } else if (playerTank.getDirection() == 8 && playerTank.getSpeed() != 0) {
+                if (Collision.checkCollision(playerTank)) {
+                    playerTank.setY(playerTank.getY() - playerTank.getSpeed());
+                }
+            } else if (this.getDirection() == 4 && playerTank.getSpeed() != 0) {
+                if (Collision.checkCollision(playerTank)) {
+                    playerTank.setX(playerTank.getX() - playerTank.getSpeed());
+                }
+            } else if (playerTank.getDirection() == 6 && playerTank.getSpeed() != 0) {
+                if (Collision.checkCollision(playerTank)) {
+                    playerTank.setX(playerTank.getX() + playerTank.getSpeed());
+                }
             }
-        } else if (playerTank.getDirection() == 8 && playerTank.getSpeed() != 0) {
-            if (Collision.checkCollision(playerTank)) {
-                playerTank.setY(playerTank.getY() - playerTank.getSpeed());
-            }
-        } else if (this.getDirection() == 4 && playerTank.getSpeed() != 0) {
-            if (Collision.checkCollision(playerTank)) {
-                playerTank.setX(playerTank.getX() - playerTank.getSpeed());
-            }
-        } else if (playerTank.getDirection() == 6 && playerTank.getSpeed() != 0) {
-            if (Collision.checkCollision(playerTank)) {
-                playerTank.setX(playerTank.getX() + playerTank.getSpeed());
+        }else {
+            if (playerTank.getDirection() == 2 && playerTank.getSpeed() != 0) {
+                if (Collision.checkCollisionOtherTank(playerTank)) {
+                    playerTank.setY(playerTank.getY() + playerTank.getSpeed());
+                }
+            } else if (playerTank.getDirection() == 8 && playerTank.getSpeed() != 0) {
+                if (Collision.checkCollisionOtherTank(playerTank)) {
+                    playerTank.setY(playerTank.getY() - playerTank.getSpeed());
+                }
+            } else if (this.getDirection() == 4 && playerTank.getSpeed() != 0) {
+                if (Collision.checkCollisionOtherTank(playerTank)) {
+                    playerTank.setX(playerTank.getX() - playerTank.getSpeed());
+                }
+            } else if (playerTank.getDirection() == 6 && playerTank.getSpeed() != 0) {
+                if (Collision.checkCollisionOtherTank(playerTank)) {
+                    playerTank.setX(playerTank.getX() + playerTank.getSpeed());
+                }
             }
         }
         if (this.getX() < 0) {
