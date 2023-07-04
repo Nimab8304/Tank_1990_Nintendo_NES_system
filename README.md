@@ -18,6 +18,13 @@ run tests from terminal:
 mvn clean test
 ```
 </li>
+<li>
+Video Link:
+
+```
+https://drive.google.com/file/d/1ncibSQWoWvp5K2Wc9cJ76DhGWvk5PKd2/view?usp=drive_link
+```
+</li>
 
 <li>
 push changes to the repository:
