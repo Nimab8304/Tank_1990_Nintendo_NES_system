@@ -21,16 +21,16 @@ public class Menu {
         );
         layout.setBackground(new Background(background));
 
-        Button button1 = new Button("Button 1");
-        Button button2 = new Button("Button 2");
-        Button button3 = new Button("Button 3");
-        Button button4 = new Button("Button 4");
-        Button button5 = new Button("Button 5");
-        Button button6 = new Button("Button 6");
-        Button button7 = new Button("Button 7");
-        Button button8 = new Button("Button 8");
-        Button button9 = new Button("Button 9");
-        Button button10 = new Button("Button 10");
+        Button button1 = new Button("Level 1");
+        Button button2 = new Button("Level 2");
+        Button button3 = new Button("Level 3");
+        Button button4 = new Button("Level 4");
+        Button button5 = new Button("Level 5");
+        Button button6 = new Button("Level 6");
+        Button button7 = new Button("Level 7");
+        Button button8 = new Button("Level 8");
+        Button button9 = new Button("Level 9");
+        Button button10 = new Button("Level 10");
 
 
         // Set button actions (you can customize these as needed)
@@ -54,11 +54,26 @@ public class Menu {
             Level5.addObjects();
             stage.close();
         });
-        button6.setOnAction(e -> System.out.println("Button 6 clicked"));
-        button7.setOnAction(e -> System.out.println("Button 7 clicked"));
-        button8.setOnAction(e -> System.out.println("Button 8 clicked"));
-        button9.setOnAction(e -> System.out.println("Button 9 clicked"));
-        button10.setOnAction(e -> System.out.println("Button 9 clicked"));
+        button6.setOnAction(e -> {
+            Level5.addObjects();
+            stage.close();
+        });
+        button7.setOnAction(e -> {
+            Level5.addObjects();
+            stage.close();
+        });
+        button8.setOnAction(e -> {
+            Level5.addObjects();
+            stage.close();
+        });
+        button9.setOnAction(e -> {
+            Level5.addObjects();
+            stage.close();
+        });
+        button10.setOnAction(e -> {
+            Level5.addObjects();
+            stage.close();
+        });
 
         // Create a vertical layout for the buttons
         layout.setAlignment(Pos.CENTER);
