@@ -8,6 +8,7 @@ import java.io.Serializable;
 public class ColumnWall extends Wall implements Serializable {
     public static Image image;
 
+
     public ColumnWall(int x, int y) {
         super(x, y);
         setHealth(2);

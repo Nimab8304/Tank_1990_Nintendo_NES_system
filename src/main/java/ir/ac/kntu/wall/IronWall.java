@@ -8,6 +8,7 @@ import java.io.Serializable;
 public class IronWall extends Wall implements Serializable {
     public static Image image;
 
+
     public IronWall(int x, int y) {
         super(x, y);
         setHealth(2147483646);

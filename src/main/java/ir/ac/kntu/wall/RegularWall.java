@@ -9,6 +9,7 @@ public class RegularWall extends Wall implements Serializable {
 
     public static Image image;
 
+
     public RegularWall(int x, int y) {
         super(x, y);
         setHealth(4);
